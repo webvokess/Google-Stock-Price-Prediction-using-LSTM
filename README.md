@@ -1,8 +1,9 @@
 # Customer Segmentation using K-Means Clustering
 
-##Author: Shashank Pandey
-
 This project demonstrates how to use **K-Means Clustering** to segment customers based on their purchasing behavior. It is aimed at helping businesses better understand customer groups and target them effectively using data-driven insights.
+
+
+## Author: Shashank Pandey
 
 ## 📊 Project Overview
 
