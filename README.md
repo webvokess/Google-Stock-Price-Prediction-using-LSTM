@@ -1,38 +1,104 @@
-# Google-Stock-Price-Prediction-using-LSTM
-Google Stock Price Prediction using Long Short-Term Memory (LSTM) is a deep learning-based approach to forecasting stock prices using historical data. LSTM is a type of recurrent neural network (RNN) that is well-suited for sequential data like stock prices.<br>
-<b>Overview<b><br>
-The goal of this project is to predict future stock prices of Google using past stock price data. Since stock prices follow time-series patterns, LSTMs can capture long-term dependencies and trends effectively.
+# Customer Segmentation using K-Means Clustering
 
-<br><b>Steps Involved</b><br>
- Data Collection
-Historical stock price data of Google (GOOGL) is collected from sources like Yahoo Finance, Alpha Vantage, or Kaggle.<br><br>
-Data Preprocessing
-Handling missing values.
-Feature scaling using MinMaxScaler to normalize the data.
-Creating sequences of past stock prices as input and future stock prices as output.
-Building the LSTM Model
+##Author: Shashank Pandey
 
-The LSTM model consists of multiple layers:
-Input Layer
-LSTM Layers (to capture dependencies in stock price movements)
-Dense (Fully Connected) Layers for final prediction
-Loss function: Mean Squared Error (MSE)
-Optimizer: Adam
-Training the Model
+This project demonstrates how to use **K-Means Clustering** to segment customers based on their purchasing behavior. It is aimed at helping businesses better understand customer groups and target them effectively using data-driven insights.
 
-The model is trained using historical stock data.
-A portion of the dataset is used for training and another portion for validation/testing.
-Making Predictions
+## 📊 Project Overview
 
-The trained LSTM model predicts stock prices for the next time steps.
-Results are compared with actual stock prices.
-Visualization
+Customer segmentation is a crucial marketing strategy used to divide customers into groups that exhibit similar behavior. In this project, we apply **K-Means Clustering**, an unsupervised machine learning algorithm, to segment customers based on the `Annual Income` and `Spending Score` attributes.
 
-Stock price predictions vs. actual prices are plotted for better analysis.
-Key Features of LSTM in Stock Prediction
-Captures long-term dependencies in time-series data.
-Prevents vanishing gradient problem, which occurs in traditional RNNs.
-Can model complex stock price movements.
-Challenges
-Stock prices are influenced by many external factors like news, economic events, and investor sentiment, which are not captured by LSTM alone.
-Hyperparameter tuning is essential for improving accuracy.
+## 📁 Dataset
+
+The dataset used is the **Mall Customers** dataset, which contains the following features:
+
+- `CustomerID`
+- `Gender`
+- `Age`
+- `Annual Income (k$)`
+- `Spending Score (1-100)`
+
+You can find the dataset in the repository under the file name: `Mall_Customers.csv`
+
+## 🔧 Technologies Used
+
+- Python
+- Pandas
+- Matplotlib
+- Seaborn
+- Scikit-learn
+
+## 🚀 How to Run
+
+1. **Clone the Repository**
+
+   ```bash
+   git clone https://github.com/webvokess/customer-segmentation.git
+   cd customer-segmentation
+
+2. **Install Dependencies**
+
+    ```bash
+   pip install -r requirements.txt
+
+    
+3. **Run the Notebook**
+
+   Open the Jupyter Notebook file `Customer_Segmentation.ipynb` using Jupyter:
+
+   ```bash
+   jupyter notebook Customer_Segmentation.ipynb
+
+## 📈 Project Steps
+
+1. **Data Preprocessing**
+   - Load the dataset (`Mall_Customers.csv`)
+   - Check for null or missing values
+   - Select relevant features for clustering (`Annual Income (k$)` and `Spending Score (1-100)`)
+
+2. **Data Visualization**
+   - Use scatter plots and distribution plots to understand feature patterns
+   - Apply the **Elbow Method** to determine the optimal number of clusters (using Within-Cluster Sum of Squares - WCSS)
+
+3. **K-Means Clustering**
+   - Fit the K-Means model to the selected data
+   - Choose the optimal number of clusters (typically 5 based on the elbow plot)
+   - Predict the cluster labels for each customer
+
+4. **Cluster Visualization**
+   - Visualize the clusters using a scatter plot
+   - Use color coding to distinguish between different clusters
+   - Plot the cluster centroids
+
+5. **Interpretation**
+   - Analyze each cluster:
+     - High income, high spending
+     - Low income, high spending
+     - High income, low spending
+     - Average income and spending
+   - Use these insights to make informed business or marketing decisions
+
+
+## 📌 Results
+
+After applying K-Means Clustering, the customers were grouped into distinct segments based on their `Annual Income` and `Spending Score`. The elbow method helped determine that **5 clusters** provide the best fit.
+
+### 🔹 Cluster Insights:
+
+- **Cluster 0:** High income, high spending — potential premium customers.
+- **Cluster 1:** Low income, high spending — possibly impulsive buyers.
+- **Cluster 2:** Average income, average spending — consistent, stable customers.
+- **Cluster 3:** High income, low spending — cautious spenders, could be targeted with special offers.
+- **Cluster 4:** Low income, low spending — low-value segment, minimal marketing needed.
+
+### 📉 Visual Output:
+
+- A scatter plot visualizes the clusters with distinct colors.
+- Centroids of clusters are plotted to show the center of each group.
+- The separation of clusters shows clear distinctions in customer behavior patterns.
+
+These segments help businesses:
+- Personalize marketing campaigns
+- Identify high-value customers
+- Improve product recommendations
+- Allocate resources more effectively
