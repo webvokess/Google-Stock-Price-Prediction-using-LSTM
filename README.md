@@ -5,7 +5,7 @@ This project uses **Long Short-Term Memory (LSTM)**, a type of Recurrent Neural 
 ---       
 ## Author : Shashank Pandey       
      
- 
+  
 ## 📊 Project Overview   
 
 Stock price prediction is a challenging and fascinating task. In this project, we use an LSTM-based deep learning model to predict Google's stock prices using its historical data.
