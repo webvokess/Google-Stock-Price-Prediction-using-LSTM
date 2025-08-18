@@ -13,7 +13,7 @@ Stock price prediction is a challenging and fascinating task. In this project, w
 The model is trained on past stock prices and aims to predict the stock's future closing prices. It provides a basic but powerful demonstration of how deep learning can be used in financial forecasting.
 
 ---
-
+ 
 ## 🧾 Dataset
 
 - Source: Yahoo Finance (GOOGL stock)
