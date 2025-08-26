@@ -16,7 +16,7 @@ The model is trained on past stock prices and aims to predict the stock's future
  
 ## 🧾 Dataset
 
-- Source: Yahoo Finance (GOOGL stock)
+- Source: Yahoo Finance (GOOGL stock). 
 - Features Used:
   - `Open`
   - `High`
