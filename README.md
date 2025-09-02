@@ -8,7 +8,7 @@ This project uses **Long Short-Term Memory (LSTM)**, a type of Recurrent Neural 
                   
 ## 📊 Project Overview       
 
-Stock price prediction is a challenging and fascinating task. In this project, we use an LSTM-based deep learning model to predict Google's stock prices using its historical data.
+Stock price prediction is a challenging and fascinating task. In this project, we use an LSTM-based deep learning model to  predict Google's stock prices using its historical data.
 
 The model is trained on past stock prices and aims to predict the stock's future closing prices. It provides a basic but powerful demonstration of how deep learning can be used in financial forecasting.
 
