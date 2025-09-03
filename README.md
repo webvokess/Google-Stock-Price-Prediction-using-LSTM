@@ -2,7 +2,7 @@
 
 This project uses **Long Short-Term Memory (LSTM)**, a type of Recurrent Neural Network (RNN), to predict future stock prices of **Google (GOOGLE)** based on historical data. LSTM models are effective for time series forecasting due to their ability to learn long-term dependencies           
                         
----                   
+---                     
 ## Author : Shashank Pandey                             
               
                   
